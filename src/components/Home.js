@@ -1,19 +1,20 @@
-import React from "react"
-import styled, { css } from "styled-components"
-import niceCake from "../images/nice-cake.jpeg"
+import React from "react";
+import styled, { css } from "styled-components";
+import niceCake from "../images/nice-cake.jpeg";
+import Form from "./Form";
 
 const BackgroundImage = styled.img`
   margin: 0;
   width: 100%;
   height: 40vh;
   object-fit: cover;
-`
+`;
 
 const ImageAndTextContainer = styled.div`
   position: relative;
   text-align: center;
   color: white;
-`
+`;
 
 const TextOnImage = styled.h1`
   color: black;
@@ -21,15 +22,18 @@ const TextOnImage = styled.h1`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-`
+`;
 
 const Home = () => {
   return (
-    <ImageAndTextContainer>
-      <BackgroundImage alt={"nice cake"} src={niceCake} />
-      <TextOnImage>Baking cakes in SW London</TextOnImage>
-    </ImageAndTextContainer>
-  )
-}
+    <React.Fragment>
+      <ImageAndTextContainer>
+        <BackgroundImage alt={"nice cake"} src={niceCake} />
+        <TextOnImage>Baking cakes in SW London</TextOnImage>
+      </ImageAndTextContainer>
+      <Form />
+    </React.Fragment>
+  );
+};
 
-export default Home
+export default Home;
