@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import styled, { css } from "styled-components";
+import React, { useState } from "react"
+import styled, { css } from "styled-components"
 
 const Button = styled.button`
   background: transparent;
@@ -8,6 +8,7 @@ const Button = styled.button`
   color: palevioletred;
   margin: 0.5em 1em;
   padding: 0.25em 1em;
+  display: block;
 
   ${props =>
     props.primary &&
@@ -15,50 +16,67 @@ const Button = styled.button`
       background: palevioletred;
       color: white;
     `}
-`;
+`
 
 const Container = styled.div`
-  text-align: center;
-`;
+  text-align: left;
+  margin: 10%;
+`
 
 const FormLabels = styled.h3`
   color: white;
   margin: 1vh;
-`;
+`
+
+const FormInput = styled.input`
+  background: palevioletred;
+  ${props =>
+    props.larger &&
+    css`
+      height: 10vh;
+      width: 40vw;
+    `}
+`
 
 const Form = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: ""
-  });
+  })
 
-  const { name, email, message } = formData;
+  const { name, email, message } = formData
 
   const onChange = e =>
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFormData({ ...formData, [e.target.name]: e.target.value })
 
   return (
     <Container>
       <FormLabels>Name (Required)</FormLabels>
-      <input type="text" name="name" value={name} onChange={e => onChange(e)} />
+      <FormInput
+        type="text"
+        name="name"
+        value={name}
+        onChange={e => onChange(e)}
+      />
       <FormLabels>Email (Required)</FormLabels>
-      <input
+      <FormInput
         type="email"
         name="email"
         value={email}
         onChange={e => onChange(e)}
       />
       <FormLabels>Message (Required)</FormLabels>
-      <input
+      <FormInput
         type="text"
         name="message"
         value={message}
         onChange={e => onChange(e)}
+        larger
       />
       <Button primary>Submit</Button>
     </Container>
-  );
-};
+  )
+}
 
-export default Form;
+export default Form
