@@ -1,6 +1,6 @@
-import React from "react"
-import styled, { css } from "styled-components"
-import macaroons from "../images/macaroons.jpeg"
+import React from "react";
+import styled, { css } from "styled-components";
+import macaroons from "../images/macaroons.jpeg";
 
 const NavbarContainer = styled.div`
   text-align: center;
@@ -11,7 +11,8 @@ const NavbarContainer = styled.div`
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-`
+  border-radius: 10px;
+`;
 
 const Logo = styled.img`
   float: left;
@@ -20,17 +21,17 @@ const Logo = styled.img`
   height: 45px;
   border-radius: 50%;
   padding: 3px 4px;
-`
+`;
 
 const Title = styled.h1`
   color: white;
   margin: 1vh;
-`
+`;
 
 const NavbarLinks = styled.div`
   color: white;
   margin: 1vh;
-`
+`;
 
 const Navbar = () => {
   return (
@@ -39,7 +40,7 @@ const Navbar = () => {
       <Title>Handmade Cakes by Effie</Title>
       <NavbarLinks>Home About</NavbarLinks>
     </NavbarContainer>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
