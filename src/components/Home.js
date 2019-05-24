@@ -2,6 +2,7 @@ import React from "react"
 import styled, { css } from "styled-components"
 import niceCake from "../images/nice-cake.jpeg"
 import Form from "./Form"
+import InstagramEmbed from 'react-instagram-embed';
 
 const BackgroundImage = styled.img`
   margin: 0;
@@ -39,7 +40,22 @@ const Home = () => {
             <p> London based </p>
 </TextOnImage>
       </ImageAndTextContainer>
+      <ImageAndTextContainer>
+      <InstagramEmbed
+  url='https://www.instagram.com/p/BxwcLFTnNIw/'
+  maxWidth={320}
+  hideCaption={false}
+  containerTagName='div'
+  protocol=''
+  injectScript
+  onLoading={() => {}}
+  onSuccess={() => {}}
+  onAfterRender={() => {}}
+  onFailure={() => {}}
+/>
+</ImageAndTextContainer>
       <Form />
+
     </React.Fragment>
   )
 }
