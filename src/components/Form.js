@@ -4,8 +4,8 @@ import styled, { css } from "styled-components"
 const Button = styled.button`
   background: transparent;
   border-radius: 3px;
-  border: 2px solid palevioletred;
-  color: palevioletred;
+  border: 2px solid #3897f0;
+  color: #3897f0;
   margin: 0.5em 1em;
   padding: 0.25em 1em;
   display: block;
@@ -13,7 +13,7 @@ const Button = styled.button`
   ${props =>
     props.primary &&
     css`
-      background: palevioletred;
+      background: #3897f0;
       color: white;
     `}
 `
@@ -29,7 +29,7 @@ const FormLabels = styled.h4`
 `
 
 const FormInput = styled.input`
-  background: palevioletred;
+  background: #3897f0;
   height: 5vh;
   width: 30vh;
   ${props =>

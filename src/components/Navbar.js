@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 
 const NavbarContainer = styled.div`
   text-align: center;
-  background-color: palevioletred;
+  background-color: #3897f0;
   color: white;
   height: 50px;
   display: flex;
@@ -23,6 +23,7 @@ const Logo = styled.img`
   height: 45px;
   border-radius: 50%;
   padding: 3px 4px;
+  font-size: calc(10px + 2vmin);
 `
 
 const Title = styled.h3`

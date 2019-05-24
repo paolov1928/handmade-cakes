@@ -3,8 +3,10 @@ import styled, { css } from "styled-components"
 import niceCake from "../images/nice-cake.jpeg"
 import Form from "./Form"
 import InstagramEmbed from 'react-instagram-embed';
+import macaroons from "../images/macaroons.jpeg"
 
 const BackgroundImage = styled.img`
+  position: relative;
   margin: 0;
   width: 100%;
   height: 40vh;
@@ -13,13 +15,11 @@ const BackgroundImage = styled.img`
 
 const ImageAndTextContainer = styled.div`
   position: relative;
-  text-align: center;
-  color: white;
-  margin: 5%;
+  margin: 0;
 `
 
 const TextOnImage = styled.h4`
-  color: palevioletred;
+  color: violet;
   position: absolute;
   top: 50%;
   left: 25%;
@@ -32,7 +32,7 @@ const Home = () => {
   return (
     <React.Fragment>
       <ImageAndTextContainer>
-        <BackgroundImage alt={"nice cake"} src={niceCake} />
+        <BackgroundImage alt={"nice cake"} src={macaroons} />
         <TextOnImage>
             <p>Personalised Cake Design for any occasion
             </p><p> Catering for Gluten & Dairy Free
@@ -40,7 +40,7 @@ const Home = () => {
             <p> London based </p>
 </TextOnImage>
       </ImageAndTextContainer>
-      <ImageAndTextContainer>
+      <div className='instaContainer'>
       <InstagramEmbed
   url='https://www.instagram.com/p/BxwcLFTnNIw/'
   maxWidth={320}
@@ -53,7 +53,7 @@ const Home = () => {
   onAfterRender={() => {}}
   onFailure={() => {}}
 />
-</ImageAndTextContainer>
+</div>
       <Form />
 
     </React.Fragment>
