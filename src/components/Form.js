@@ -20,21 +20,23 @@ const Button = styled.button`
 
 const Container = styled.div`
   text-align: left;
-  margin: 10%;
+  margin: 5%;
 `
 
-const FormLabels = styled.h3`
+const FormLabels = styled.h4`
   color: white;
   margin: 1vh;
 `
 
 const FormInput = styled.input`
   background: palevioletred;
+  height: 5vh;
+  width: 30vh;
   ${props =>
     props.larger &&
     css`
       height: 10vh;
-      width: 40vw;
+      min-width: 40vw;
     `}
 `
 
@@ -52,6 +54,7 @@ const Form = () => {
 
   return (
     <Container>
+      <FormLabels>Please use the form to make an order!</FormLabels>
       <FormLabels>Name (Required)</FormLabels>
       <FormInput
         type="text"

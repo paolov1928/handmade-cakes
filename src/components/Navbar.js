@@ -1,10 +1,11 @@
-import React from "react";
-import styled, { css } from "styled-components";
-import macaroons from "../images/macaroons.jpeg";
+import React from "react"
+import styled, { css } from "styled-components"
+import macaroons from "../images/macaroons.jpeg"
+import { Link } from "react-router-dom"
 
 const NavbarContainer = styled.div`
   text-align: center;
-  background-color: #4b0082;
+  background-color: palevioletred;
   color: white;
   height: 50px;
   display: flex;
@@ -13,7 +14,7 @@ const NavbarContainer = styled.div`
   align-items: center;
   border-radius: 10px;
   margin-bottom: 20px;
-`;
+`
 
 const Logo = styled.img`
   float: left;
@@ -22,26 +23,37 @@ const Logo = styled.img`
   height: 45px;
   border-radius: 50%;
   padding: 3px 4px;
-`;
+`
 
-const Title = styled.h1`
+const Title = styled.h3`
   color: white;
   margin: 1vh;
-`;
+  font-family: cursive;
+`
+const LinkTitles = styled.a`
+  color: white;
+`
 
 const NavbarLinks = styled.div`
   color: white;
   margin: 1vh;
-`;
+`
 
 const Navbar = () => {
   return (
     <NavbarContainer>
       <Logo alt={"logo"} src={macaroons} />
       <Title>Handmade Cakes by Effie</Title>
-      <NavbarLinks>Home About</NavbarLinks>
+      <NavbarLinks>
+        <Link to="/">
+          <LinkTitles>Home</LinkTitles>
+        </Link>{" "}
+        <Link to="/About">
+          <LinkTitles>About</LinkTitles>
+        </Link>
+      </NavbarLinks>
     </NavbarContainer>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
