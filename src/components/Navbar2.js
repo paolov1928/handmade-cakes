@@ -51,7 +51,7 @@ function MenuAppBar() {
       <AppBar color='red' position="static">
         <Toolbar>
           <div className="NavBarTitle">
-          <p>Cakes by Effie Mae</p>
+          <p><b>Cakes by Effie Mae</b></p>
           </div>
           <div className={classes.socialButtons}>
           <a href="https://www.facebook.com/cakesbyeffiemae/" class="fa fa-facebook"></a>
