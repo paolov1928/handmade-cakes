@@ -29,7 +29,7 @@ const FormLabels = styled.h4`
 const FormInput = styled.input`
   background: rgba(30, 13, 45, 0.03);
   height: 5vh;
-  width: 30vh;
+  min-width: 30vh;
   ${props =>
     props.larger &&
     css`

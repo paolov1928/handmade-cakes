@@ -5,6 +5,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 .instaContainer {
   display: flex;
   justify-content: center;
@@ -23,13 +24,20 @@ body {
   border-radius: 5px;
 }
 .introText {
-padding: 5vh;
+padding: 10px;
 font-weight: bold;
+}
+.fillerText {
+font-size: calc(12px + 3vmin);
+font-weight: bold;
+text-align: center;
+color: #EE82EE;
+font-family: 'Tangerine';
 }
 .fa {
   padding: 5vmin;
   font-size: calc(10px + 2vmin);
-  width: 50px;
+  width: 2vw;
   text-align: center;
   text-decoration: none;
 }
@@ -44,4 +52,12 @@ font-weight: bold;
 .fa-instagram {
   background: #EE82EE	;
   color: white;
+}
+.NavBarTitle {
+    font-size: calc(12px + 3vmin);
+    margin-left: 2vh;
+    flex-grow: 3;
+    color: #EE82EE;
+    font-family: 'Tangerine';
+
 }

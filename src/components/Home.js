@@ -12,6 +12,8 @@ const BackgroundImage = styled.img`
   width: 100%;
   height: 50vh;
   object-fit: cover;
+  border: 2px solid #F5F5F5;
+  border-radius: 5px;
 `
 
 const SecondImage = styled.img`
@@ -20,12 +22,15 @@ const SecondImage = styled.img`
   width: 50vw;
   height: auto;
   object-fit: cover;
+  border: 2px solid #F5F5F5;
+  border-radius: 5px;
 `
 
 const MacaroonContainer = styled.div`
   position: relative;
   margin-top: 5vh;
   margin-bottom: 5vh;
+
 `
 
 const TextNextToImage = styled.div`
@@ -44,6 +49,9 @@ const Home = () => {
         <BackgroundImage alt={"macaroons"} src={macaroons} />
 
       </MacaroonContainer>
+      <div className='fillerText'>
+      <p>Luxury Cake Baking for London and the surrounding area </p>
+      </div>
       <div className='introTextContainer'>
         <TextNextToImage>
           <Typography variant="body1" className='introText' >
@@ -63,6 +71,10 @@ const Home = () => {
 
 
       </div>
+      <div className='fillerText'>
+      <p>Check out the instagram feed for a showcase of the latest baking projects </p>
+      </div>
+      <div className='introTextContainer'>
       <div className='instaContainer'>
       <InstagramEmbed
   url='https://www.instagram.com/p/BxwcLFTnNIw/'
@@ -76,6 +88,9 @@ const Home = () => {
   onAfterRender={() => {}}
   onFailure={() => {}}
 />
+</div>
+
+
 </div>
       <Form />
 

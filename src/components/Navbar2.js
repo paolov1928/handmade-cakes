@@ -26,12 +26,6 @@ const useStyles = makeStyles(theme => ({
   socialButtons: {
     display: 'flex',
   },
-  title: {
-    marginLeft: theme.spacing(1),
-    flexGrow: 3,
-    color: 'violet',
-    fontFamily: 'Tangerine'
-  },
 }));
 
 function MenuAppBar() {
@@ -56,10 +50,9 @@ function MenuAppBar() {
     <div className={classes.root}>
       <AppBar color='red' position="static">
         <Toolbar>
-
-          <Typography variant="h2"  className={classes.title}>
-            Cakes by Effie Mae
-          </Typography>
+          <div className="NavBarTitle">
+          <p>Cakes by Effie Mae</p>
+          </div>
           <div className={classes.socialButtons}>
           <a href="https://www.facebook.com/cakesbyeffiemae/" class="fa fa-facebook"></a>
           <a href="https://www.instagram.com/handmadecakesbyeffiemae/" class="fa fa-instagram"></a>

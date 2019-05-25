@@ -10,6 +10,7 @@
     "react-instagram-embed": "^1.5.0",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.1",
+    "react-scroll": "^1.7.11",
     "styled-components": "^4.2.0"
   },
   "scripts": {
