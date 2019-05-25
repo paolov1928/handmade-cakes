@@ -1,7 +1,6 @@
 body {
   background-color: white;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -9,4 +8,40 @@ body {
 .instaContainer {
   display: flex;
   justify-content: center;
+}
+
+.introTextContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(30, 13, 45, 0.03);
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  border: 2px solid #F5F5F5;
+  border-radius: 5px;
+}
+.introText {
+padding: 5vh;
+font-weight: bold;
+}
+.fa {
+  padding: 5vmin;
+  font-size: calc(10px + 2vmin);
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #EE82EE	;
+  color: white;
+  border-right: 5px solid white;
+}
+.fa-instagram {
+  background: #EE82EE	;
+  color: white;
 }

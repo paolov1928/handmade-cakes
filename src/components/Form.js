@@ -4,18 +4,16 @@ import styled, { css } from "styled-components"
 const Button = styled.button`
   background: transparent;
   border-radius: 3px;
-  border: 2px solid #3897f0;
-  color: #3897f0;
-  margin: 0.5em 1em;
-  padding: 0.25em 1em;
+  border: 2px solid rgba(30, 13, 45, 0.03);
+  color: white;
+  margin-top: 1vh;
+  padding: 1vh;
   display: block;
-
-  ${props =>
-    props.primary &&
-    css`
-      background: #3897f0;
-      color: white;
-    `}
+  min-width: 30vw;
+  height: 5vh;
+  font-size: calc(10px + 2vmin);
+  text-align: left;
+  background: violet;
 `
 
 const Container = styled.div`
@@ -24,12 +22,12 @@ const Container = styled.div`
 `
 
 const FormLabels = styled.h4`
-  color: white;
+  color: violet;
   margin: 1vh;
 `
 
 const FormInput = styled.input`
-  background: #3897f0;
+  background: rgba(30, 13, 45, 0.03);
   height: 5vh;
   width: 30vh;
   ${props =>
@@ -77,7 +75,7 @@ const Form = () => {
         onChange={e => onChange(e)}
         larger
       />
-      <Button primary>Submit</Button>
+    <Button><b>Submit</b></Button>
     </Container>
   )
 }

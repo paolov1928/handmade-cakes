@@ -12,21 +12,25 @@ import FormGroup from '@material-ui/core/FormGroup';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 
+
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
     color: 'violet'
-
-
   },
   menuButton: {
-    marginRight: theme.spacing(2),
+    marginRight: theme.spacing(1),
+    marginLeft: theme.spacing(1),
     color: 'violet'
   },
+  socialButtons: {
+    display: 'flex',
+  },
   title: {
-    flexGrow: 1,
-    fontFamily: 'cursive',
-    color: 'violet'
+    marginLeft: theme.spacing(1),
+    flexGrow: 3,
+    color: 'violet',
+    fontFamily: 'Tangerine'
   },
 }));
 
@@ -53,9 +57,13 @@ function MenuAppBar() {
       <AppBar color='red' position="static">
         <Toolbar>
 
-          <Typography variant="h6"  className={classes.title}>
+          <Typography variant="h2"  className={classes.title}>
             Cakes by Effie Mae
           </Typography>
+          <div className={classes.socialButtons}>
+          <a href="https://www.facebook.com/cakesbyeffiemae/" class="fa fa-facebook"></a>
+          <a href="https://www.instagram.com/handmadecakesbyeffiemae/" class="fa fa-instagram"></a>
+          </div>
           {auth && (
             <div className={classes.menuButton}>
               <IconButton
@@ -87,7 +95,9 @@ function MenuAppBar() {
               </Menu>
 
             </div>
+
           )}
+
         </Toolbar>
       </AppBar>
     </div>
