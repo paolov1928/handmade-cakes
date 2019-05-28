@@ -5,7 +5,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
+.copy {
+    text-align: center;
+}
 .instaContainer {
   display: flex;
   justify-content: center;
