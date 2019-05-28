@@ -75,7 +75,9 @@ const Form = () => {
         onChange={e => onChange(e)}
         larger
       />
-    <Button><b>Submit</b></Button>
+      <Button>
+        <b>Submit</b>
+      </Button>
     </Container>
   )
 }
