@@ -5,6 +5,7 @@ import InstagramEmbed from "react-instagram-embed"
 import macaroons from "../images/macaroons.jpeg"
 import weddingCake1 from "../images/wedding-cake-1.jpeg"
 import Typography from "@material-ui/core/Typography"
+import PricesTable from './PricesTable'
 
 const BackgroundImage = styled.img`
   position: relative;
@@ -42,12 +43,13 @@ const TextNextToImage = styled.div`
 `
 
 const Home = () => {
+
   return (
     <React.Fragment>
       <MacaroonContainer>
         <BackgroundImage alt={"macaroons"} src={macaroons} />
       </MacaroonContainer>
-      <div className="fillerText">
+      <div className="fillerText scroll-gallery">
         <p>Luxury Cake Baking for London and the surrounding area </p>
       </div>
       <div className="introTextContainer">
@@ -67,7 +69,7 @@ const Home = () => {
         </TextNextToImage>
         <SecondImage alt={"nice cake"} src={weddingCake1} />
       </div>
-      <div className="fillerText">
+      <div className="fillerText scroll-insta">
         <p>
           Check out the instagram feed for a showcase of the latest baking
           projects{" "}
@@ -89,7 +91,22 @@ const Home = () => {
           />
         </div>
       </div>
+      <div className="fillerText scroll-prices">
+        <p>
+          Please find below the base prices
+        </p>
+      </div>
+      <div className="introTextContainer">
+      <PricesTable />
+      </div>
+      <div className="fillerText scroll-form">
+        <p>
+          If interested please do not hesitate to get in contact with us!
+        </p>
+      </div>
+      <div className="introTextContainer">
       <Form />
+      </div>
     </React.Fragment>
   )
 }

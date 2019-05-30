@@ -9,16 +9,19 @@ import Paper from "@material-ui/core/Paper"
 
 const useStyles = makeStyles(theme => ({
   root: {
-    width: "40%",
+    width: "60%",
     marginTop: theme.spacing(3)
   },
-  table: {}
+  table: {},
+  head: {
+    fontWeight: 'bold',
+  }
 }))
 
 const rows = [
-  { type: "1 layer", price: "£55" },
-  { type: "wedding 3 layer", price: "£350" },
-  { type: "wedding 4 layer", price: "£400" }
+  { type: "1 layer", price: "55" },
+  { type: "Wedding 3 layer", price: "350" },
+  { type: "Wedding 4 layer", price: "400" }
 ]
 
 function SimpleTable() {
@@ -27,10 +30,10 @@ function SimpleTable() {
   return (
     <Paper className={classes.root}>
       <Table className={classes.table}>
-        <TableHead>
+        <TableHead className={classes.head}>
           <TableRow>
-            <TableCell>Type of Cake</TableCell>
-            <TableCell align="right">Price</TableCell>
+            <TableCell><b>Type of Cake</b></TableCell>
+            <TableCell align="right"><b>Price (£)</b></TableCell>
           </TableRow>
         </TableHead>
         <TableBody>

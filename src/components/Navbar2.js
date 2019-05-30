@@ -6,6 +6,8 @@ import IconButton from "@material-ui/core/IconButton"
 import MenuIcon from "@material-ui/icons/Menu"
 import MenuItem from "@material-ui/core/MenuItem"
 import Menu from "@material-ui/core/Menu"
+import animateScrollTo from 'animated-scroll-to';
+
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -42,6 +44,7 @@ function MenuAppBar() {
   function handleClose() {
     setAnchorEl(null)
   }
+
 
   return (
     <div className={classes.root}>
@@ -84,10 +87,18 @@ function MenuAppBar() {
                 open={open}
                 onClose={handleClose}
               >
-                <MenuItem onClick={handleClose}>Gallery</MenuItem>
-                <MenuItem onClick={handleClose}>Instagram</MenuItem>
-                <MenuItem onClick={handleClose}>Prices</MenuItem>
-                <MenuItem onClick={handleClose}>Contact</MenuItem>
+                <MenuItem onClick={()=>{
+                    setAnchorEl(null)
+                    animateScrollTo(document.querySelector('.scroll-gallery'))}}>Gallery</MenuItem>
+                <MenuItem onClick={()=>{
+                    setAnchorEl(null)
+                    animateScrollTo(document.querySelector('.scroll-insta'))}}>Instagram</MenuItem>
+                <MenuItem onClick={()=>{
+                    setAnchorEl(null)
+                    animateScrollTo(document.querySelector('.scroll-prices'))}}>Prices</MenuItem>
+                <MenuItem onClick={()=>{
+                    setAnchorEl(null)
+                    animateScrollTo(document.querySelector('.scroll-form'))}}>Contact</MenuItem>
               </Menu>
             </div>
           </div>
