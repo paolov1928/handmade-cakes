@@ -75,7 +75,18 @@ const Form = () => {
         onChange={e => onChange(e)}
         larger
       />
-      <Button>
+      <Button
+        onClick={() =>
+          fetch("http://localhost:1337/cakes", {
+            method: "post",
+            body: JSON.stringify(formData),
+            headers: {
+              Accept: "application/json",
+              "Content-Type": "application/json"
+            }
+          })
+        }
+      >
         <b>Submit</b>
       </Button>
     </Container>

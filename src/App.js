@@ -8,9 +8,13 @@ import About from "./components/About"
 function App() {
   return (
     <Router>
-      <Navbar2 />
-      <Route exact path="/" component={Home} />
-      <Route exact path="/about" component={About} />
+      <div id="cssMenu">
+        <Navbar2 />
+      </div>
+      <div id="restOfContent">
+        <Route exact path="/" component={Home} />
+        <Route exact path="/about" component={About} />
+      </div>
     </Router>
   )
 }
