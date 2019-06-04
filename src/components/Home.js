@@ -54,8 +54,8 @@ const Home = () => {
       </div>
       <div className="introTextContainer">
         <TextNextToImage>
-          {allText.home.typography.map(text => (
-            <Typography variant="body1" className="introText">
+          {allText.home.typography.map((text, i) => (
+            <Typography variant="body1" className="introText" key={i}>
               <b>{text}</b>
             </Typography>
           ))}

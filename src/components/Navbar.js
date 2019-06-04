@@ -43,7 +43,7 @@ function MenuAppBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar color="red" position="static">
+      <AppBar position="static">
         <Toolbar>
           <div className="NavBarTitle">
             <p>
