@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import styled, { css } from "styled-components"
+const allText = require("../copy.js")
 
 const Button = styled.button`
   background: transparent;
@@ -52,22 +53,22 @@ const Form = () => {
 
   return (
     <Container>
-      <FormLabels>Please use the form to make an order!</FormLabels>
-      <FormLabels>Name (Required)</FormLabels>
+      <FormLabels>{allText.form.title}</FormLabels>
+      <FormLabels>{allText.form.firstInput}</FormLabels>
       <FormInput
         type="text"
         name="name"
         value={name}
         onChange={e => onChange(e)}
       />
-      <FormLabels>Email (Required)</FormLabels>
+      <FormLabels>{allText.form.secondInput}</FormLabels>
       <FormInput
         type="email"
         name="email"
         value={email}
         onChange={e => onChange(e)}
       />
-      <FormLabels>Message (Required)</FormLabels>
+      <FormLabels>{allText.form.thirdInput}</FormLabels>
       <FormInput
         type="text"
         name="message"

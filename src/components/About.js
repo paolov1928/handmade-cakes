@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-
+const allText = require("../copy.js")
 
 const Title = styled.h3`
   color: black;
@@ -11,8 +11,7 @@ const Title = styled.h3`
 const About = () => {
   return (
     <div>
-      <Title>I am Effie the best baker in the whole of the 7 kingdoms</Title>
-      
+      <Title>{allText.about.title}</Title>
     </div>
   )
 }

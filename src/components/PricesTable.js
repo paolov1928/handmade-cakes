@@ -6,6 +6,7 @@ import TableCell from "@material-ui/core/TableCell"
 import TableHead from "@material-ui/core/TableHead"
 import TableRow from "@material-ui/core/TableRow"
 import Paper from "@material-ui/core/Paper"
+const allText = require("../copy.js")
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -14,15 +15,9 @@ const useStyles = makeStyles(theme => ({
   },
   table: {},
   head: {
-    fontWeight: 'bold',
+    fontWeight: "bold"
   }
 }))
-
-const rows = [
-  { type: "1 layer", price: "55" },
-  { type: "Wedding 3 layer", price: "350" },
-  { type: "Wedding 4 layer", price: "400" }
-]
 
 function SimpleTable() {
   const classes = useStyles()
@@ -32,12 +27,16 @@ function SimpleTable() {
       <Table className={classes.table}>
         <TableHead className={classes.head}>
           <TableRow>
-            <TableCell><b>Type of Cake</b></TableCell>
-            <TableCell align="right"><b>Price (£)</b></TableCell>
+            <TableCell>
+              <b>Type of Cake</b>
+            </TableCell>
+            <TableCell align="right">
+              <b>Price (£)</b>
+            </TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map(row => (
+          {allText.pricesTable.map(row => (
             <TableRow key={row.type}>
               <TableCell component="th" scope="row">
                 {row.type}

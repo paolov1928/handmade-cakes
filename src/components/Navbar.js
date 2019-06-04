@@ -8,6 +8,8 @@ import MenuItem from "@material-ui/core/MenuItem"
 import Menu from "@material-ui/core/Menu"
 import animateScrollTo from "animated-scroll-to"
 
+const allText = require("../copy.js")
+
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
@@ -50,7 +52,7 @@ function MenuAppBar() {
         <Toolbar>
           <div className="NavBarTitle">
             <p>
-              <b>Cakes by Effie Mae</b>
+              <b>{allText.navBar.title}</b>
             </p>
           </div>
           <div className={classes.socialButtons}>
