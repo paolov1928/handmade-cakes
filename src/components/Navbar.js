@@ -13,7 +13,8 @@ const allText = require("../copy.js")
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    color: "violet"
+    color: "violet",
+    backgroundColor: "white"
   },
   menuButton: {
     backgroundColor: "violet",
@@ -43,7 +44,7 @@ function MenuAppBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar color="transparent" position="static">
         <Toolbar>
           <div className="NavBarTitle">
             <p>
@@ -53,11 +54,11 @@ function MenuAppBar() {
           <div className={classes.socialButtons}>
             <a
               href="https://www.facebook.com/cakesbyeffiemae/"
-              class="fa fa-facebook"
+              className="fa fa-facebook"
             />
             <a
               href="https://www.instagram.com/handmadecakesbyeffiemae/"
-              class="fa fa-instagram"
+              className="fa fa-instagram"
             />
             <div className={classes.menuButton}>
               <IconButton
