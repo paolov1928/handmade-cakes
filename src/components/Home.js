@@ -55,9 +55,9 @@ const Home = () => {
       <div className="introTextContainer">
         <TextNextToImage>
           {allText.home.typography.map((text, i) => (
-            <Typography variant="body1" className="introText" key={i}>
+            <p variant="body1" className="introText" key={i}>
               <b>{text}</b>
-            </Typography>
+            </p>
           ))}
         </TextNextToImage>
         <SecondImage alt={"nice cake"} src={weddingCake1} />
@@ -68,7 +68,7 @@ const Home = () => {
       <div className="introTextContainer">
         <div className="instaContainer">
           <InstagramEmbed
-            url="https://www.instagram.com/p/BxwcLFTnNIw/"
+            url="https://instagr.am/p/Zw9o4/"
             maxWidth={320}
             hideCaption={false}
             containerTagName="div"

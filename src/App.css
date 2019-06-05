@@ -1,6 +1,6 @@
 body {
   background-color: white;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "Tangerine";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -38,15 +38,15 @@ body {
   border-radius: 5px;
 }
 .introText {
-  padding: 10px;
+  padding: 2vh;
   font-weight: bold;
+  font-size: calc(12px + 3vmin);
 }
 .fillerText {
   font-size: calc(12px + 3vmin);
   font-weight: bold;
   text-align: center;
   color: #ee82ee;
-  font-family: "Tangerine";
 }
 .fa {
   padding: 5vmin;
@@ -73,5 +73,4 @@ body {
   margin-left: 2vh;
   flex-grow: 3;
   color: #ee82ee;
-  font-family: "Tangerine";
 }

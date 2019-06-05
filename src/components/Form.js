@@ -22,9 +22,11 @@ const Container = styled.div`
   margin: 5%;
 `
 
-const FormLabels = styled.h4`
+const FormLabels = styled.p`
   color: violet;
   margin: 1vh;
+  font-weight: bold;
+  font-size: calc(12px + 3vmin);
 `
 
 const FormInput = styled.input`
