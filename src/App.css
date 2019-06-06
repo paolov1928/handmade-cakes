@@ -75,6 +75,10 @@ body {
   flex-grow: 3;
   color: #ee82ee;
 }
+#customNavBarBorder {
+  box-shadow: none;
+  border-bottom: 1px solid #f5f5f5;
+}
 
 /* Custom Select */
 

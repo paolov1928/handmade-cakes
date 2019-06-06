@@ -4,7 +4,6 @@ import Form from "./Form"
 import InstagramEmbed from "react-instagram-embed"
 import macaroons from "../images/macaroons.jpeg"
 import weddingCake1 from "../images/wedding-cake-1.jpeg"
-import Typography from "@material-ui/core/Typography"
 import PricesTable from "./PricesTable"
 const allText = require("../copy.js")
 
