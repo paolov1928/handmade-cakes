@@ -5,7 +5,30 @@ const allText = {
     title: "Please use the form to make an order!",
     firstInput: "Name(Required)",
     secondInput: "Email(Required)",
-    thirdInput: "Message (Required)"
+    thirdInput: "Message (Required)",
+    fourthInput: "Drip (Optional)",
+    fifthInput: "Topping (Optional)",
+    sixthInput: "Base (Optional)"
+  },
+  dropdownArrays: {
+    drip: ["Please select", "yellow", "green", "red", "white"],
+    topping: [
+      "Please select",
+      "sprinkles",
+      "chocolate balls",
+      "mars bars",
+      "nuts",
+      "plain"
+    ],
+    base: [
+      "Please select",
+      "chocolate",
+      "vanilla",
+      "carrot",
+      "toffee",
+      "marble",
+      "sponge"
+    ]
   },
   home: {
     fillerGallery: "Luxury Cake Baking for London and the surrounding area",

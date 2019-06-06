@@ -68,7 +68,7 @@ const Home = () => {
       <div className="introTextContainer">
         <div className="instaContainer">
           <InstagramEmbed
-            url="https://instagr.am/p/Zw9o4/"
+            url="https://www.instagram.com/p/BxwcLFTnNIw/"
             maxWidth={320}
             hideCaption={false}
             containerTagName="div"
