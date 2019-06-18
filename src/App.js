@@ -19,4 +19,5 @@ function App() {
   )
 }
 
+// Could remove the about page
 export default App
