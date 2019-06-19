@@ -3,7 +3,7 @@ const allText = {
   about: { title: "I am Effie the best baker in the whole of the 7 kingdoms" },
   form: {
     title:
-      "To order a personalised cake or make an enquiry please use the form below or send us an email:",
+      "To order a personalised cake or make an enquiry please send us an email using the form below:",
     firstInput: "Name(*)",
     secondInput: "Email(*)",
     thirdInput: "Message (*)",
