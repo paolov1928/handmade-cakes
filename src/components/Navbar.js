@@ -35,7 +35,10 @@ function MenuAppBar() {
   const classes = useStyles()
   const [anchorEl, setAnchorEl] = React.useState(null)
   const open = Boolean(anchorEl)
-
+  const options = {
+    speed: 100,
+    offset: -100
+  }
   function handleMenu(event) {
     setAnchorEl(event.currentTarget)
   }
@@ -85,7 +88,10 @@ function MenuAppBar() {
                 <MenuItem
                   onClick={() => {
                     setAnchorEl(null)
-                    animateScrollTo(document.querySelector(".scroll-gallery"))
+                    animateScrollTo(
+                      document.querySelector(".scroll-gallery"),
+                      options
+                    )
                   }}
                 >
                   Gallery
@@ -93,23 +99,32 @@ function MenuAppBar() {
                 <MenuItem
                   onClick={() => {
                     setAnchorEl(null)
-                    animateScrollTo(document.querySelector(".scroll-insta"))
+                    animateScrollTo(
+                      document.querySelector(".scroll-about"),
+                      options
+                    )
                   }}
                 >
-                  Instagram
+                  About
                 </MenuItem>
                 <MenuItem
                   onClick={() => {
                     setAnchorEl(null)
-                    animateScrollTo(document.querySelector(".scroll-prices"))
+                    animateScrollTo(
+                      document.querySelector(".scroll-insta"),
+                      options
+                    )
                   }}
                 >
-                  Prices
+                  Social Media
                 </MenuItem>
                 <MenuItem
                   onClick={() => {
                     setAnchorEl(null)
-                    animateScrollTo(document.querySelector(".scroll-form"))
+                    animateScrollTo(
+                      document.querySelector(".scroll-form"),
+                      options
+                    )
                   }}
                 >
                   Contact

@@ -37,11 +37,17 @@ const allText = {
     fillerPrices: "Please find below the base prices",
     fillerForm:
       "If interested please do not hesitate to get in contact with us!",
-    typography: [
+    firstTypography: [
       "Personalised Cake Design for any special occasion",
       "Gluten & Dairy Free options available",
       "Customise your perfect frosted cake",
       "London based"
+    ],
+    secondTypography: [
+      "Occasion Cakes",
+      "Tiered Wedding Cakes",
+      "Macaroons",
+      "Wedding Favours"
     ]
   },
   pricesTable: [

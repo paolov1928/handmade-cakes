@@ -18,8 +18,6 @@ const BackgroundImage = styled.img`
 `
 
 const SecondImage = styled.img`
-  position: relative;
-  margin: 0;
   width: 50vw;
   height: auto;
   object-fit: cover;
@@ -33,35 +31,30 @@ const MacaroonContainer = styled.div`
   margin-bottom: 5vh;
 `
 
-const TextNextToImage = styled.div`
-  color: #f1be5e8a;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-`
-
 const Home = () => {
   return (
     <React.Fragment>
       <MacaroonContainer>
         <BackgroundImage alt={"macaroons"} src={macaroons} />
       </MacaroonContainer>
-      <div className="fillerText scroll-gallery">
-        {allText.home.typography.map((text, i) => (
+      <div className="fillerText">
+        {allText.home.firstTypography.map((text, i) => (
           <p variant="body1" className="introText" key={i}>
             <b>{text}</b>
           </p>
         ))}
       </div>
-      <div className="introTextContainer">
+      <div className="introTextContainer scroll-gallery">
         <SecondImage alt={"nice cake"} src={weddingCake1} />
       </div>
-      <div className="fillerText scroll-insta">
-        <p>{allText.home.fillerInsta}</p>
+      <div className="fillerText scroll-about">
+        {allText.home.secondTypography.map((text, i) => (
+          <p variant="body1" className="introText" key={i}>
+            <b>{text}</b>
+          </p>
+        ))}
       </div>
-      <div className="introTextContainer">
+      <div className="introTextContainer scroll-insta">
         <div className="instaContainer">
           <InstagramEmbed
             url="https://www.instagram.com/p/BxwcLFTnNIw/"
@@ -76,12 +69,6 @@ const Home = () => {
             onFailure={() => {}}
           />
         </div>
-      </div>
-      <div className="fillerText scroll-prices">
-        <p>{allText.home.fillerPrices}</p>
-      </div>
-      <div className="introTextContainer">
-        <PricesTable />
       </div>
       <div className="fillerText scroll-form">
         <p>{allText.home.fillerForm}</p>
