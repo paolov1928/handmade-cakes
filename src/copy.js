@@ -32,16 +32,15 @@ const allText = {
     ]
   },
   home: {
-    fillerGallery: "Luxury Cake Baking for London and the surrounding area",
     fillerInsta:
       "Check out the instagram feed for a showcase of the latest baking projects",
     fillerPrices: "Please find below the base prices",
     fillerForm:
       "If interested please do not hesitate to get in contact with us!",
     typography: [
-      "Personalised Cake Design for any occasion",
-      "Catering for Gluten & Dairy Free ",
-      "Email to order and customise your perfect cake",
+      "Personalised Cake Design for any special occasion",
+      "Gluten & Dairy Free options available",
+      "Customise your perfect frosted cake",
       "London based"
     ]
   },

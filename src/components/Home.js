@@ -49,16 +49,13 @@ const Home = () => {
         <BackgroundImage alt={"macaroons"} src={macaroons} />
       </MacaroonContainer>
       <div className="fillerText scroll-gallery">
-        <p>{allText.home.fillerGallery}</p>
+        {allText.home.typography.map((text, i) => (
+          <p variant="body1" className="introText" key={i}>
+            <b>{text}</b>
+          </p>
+        ))}
       </div>
       <div className="introTextContainer">
-        <TextNextToImage>
-          {allText.home.typography.map((text, i) => (
-            <p variant="body1" className="introText" key={i}>
-              <b>{text}</b>
-            </p>
-          ))}
-        </TextNextToImage>
         <SecondImage alt={"nice cake"} src={weddingCake1} />
       </div>
       <div className="fillerText scroll-insta">
