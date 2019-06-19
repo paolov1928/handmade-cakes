@@ -29,12 +29,12 @@ const SecondImage = styled.img`
 
 const MacaroonContainer = styled.div`
   position: relative;
-  margin-top: 5vh;
+  margin-top: 0;
   margin-bottom: 5vh;
 `
 
 const TextNextToImage = styled.div`
-  color: violet;
+  color: #f1be5e8a;
   text-align: left;
   display: flex;
   flex-direction: column;

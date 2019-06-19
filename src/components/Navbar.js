@@ -7,18 +7,19 @@ import MenuIcon from "@material-ui/icons/Menu"
 import MenuItem from "@material-ui/core/MenuItem"
 import Menu from "@material-ui/core/Menu"
 import animateScrollTo from "animated-scroll-to"
+import Logo from "./Logo"
 
 const allText = require("../copy.js")
 
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    color: "violet",
+    color: "#f1be5e8a",
     backgroundColor: "white",
     boxShadow: "none"
   },
   menuButton: {
-    backgroundColor: "violet",
+    backgroundColor: "#f1be5e8a",
     color: "white",
     display: "flex",
     width: "13vw",
@@ -47,20 +48,17 @@ function MenuAppBar() {
     <div className={classes.root}>
       <AppBar color="transparent" position="static" id="customNavBarBorder">
         <Toolbar>
-          <div className="NavBarTitle">
-            <p>
-              <b>{allText.navBar.title}</b>
-            </p>
-          </div>
+          <Logo />
           <div className={classes.socialButtons}>
-            <a
-              href="https://www.facebook.com/cakesbyeffiemae/"
-              className="fa fa-facebook"
-            />
             <a
               href="https://www.instagram.com/handmadecakesbyeffiemae/"
               className="fa fa-instagram"
             />
+            <a
+              href="https://www.facebook.com/cakesbyeffiemae/"
+              className="fa fa-facebook"
+            />
+
             <div className={classes.menuButton}>
               <IconButton
                 aria-owns={open ? "menu-appbar" : undefined}

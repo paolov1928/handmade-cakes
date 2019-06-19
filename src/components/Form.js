@@ -13,23 +13,23 @@ const Button = styled.button`
   display: block;
   min-width: 30vw;
   height: 3em;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(8px + 2vmin);
   text-align: center;
-  background: violet;
+  background: #f1be5e8a;
   width: 100%;
   max-width: 100%;
 `
 
 const Container = styled.div`
-  text-align: left;
+  text-align: center;
   margin: 5%;
 `
 
 const FormLabels = styled.p`
-  color: violet;
+  color: #f1be5e8a;
   margin: 1vh;
   font-weight: bold;
-  font-size: calc(12px + 3vmin);
+  font-size: calc(4px + 3vmin);
 `
 
 const FormInput = styled.input`

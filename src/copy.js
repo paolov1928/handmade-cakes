@@ -1,11 +1,12 @@
 const allText = {
-  navBar: { title: "Cakes by Effie Mae" },
+  navBar: { title: "Effie Mae", underText: "Personalised Cake Designer" },
   about: { title: "I am Effie the best baker in the whole of the 7 kingdoms" },
   form: {
-    title: "Please use the form to make an order!",
-    firstInput: "Name(Required)",
-    secondInput: "Email(Required)",
-    thirdInput: "Message (Required)",
+    title:
+      "To order a personalised cake or make an enquiry please use the form below or send us an email:",
+    firstInput: "Name(*)",
+    secondInput: "Email(*)",
+    thirdInput: "Message (*)",
     fourthInput: "Drip (Optional)",
     fifthInput: "Topping (Optional)",
     sixthInput: "Base (Optional)"
