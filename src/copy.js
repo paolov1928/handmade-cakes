@@ -7,9 +7,9 @@ const allText = {
     firstInput: "Name(*)",
     secondInput: "Email(*)",
     thirdInput: "Message (*)",
-    fourthInput: "Drip (Optional)",
-    fifthInput: "Topping (Optional)",
-    sixthInput: "Base (Optional)"
+    fourthInput: "Drip",
+    fifthInput: "Topping",
+    sixthInput: "Base"
   },
   dropdownArrays: {
     drip: ["Please select", "yellow", "green", "red", "white"],
