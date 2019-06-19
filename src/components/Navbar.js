@@ -9,8 +9,6 @@ import Menu from "@material-ui/core/Menu"
 import animateScrollTo from "animated-scroll-to"
 import Logo from "./Logo"
 
-const allText = require("../copy.js")
-
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
@@ -19,6 +17,7 @@ const useStyles = makeStyles(theme => ({
     boxShadow: "none"
   },
   menuButton: {
+    borderRadius: "50%",
     backgroundColor: "#f1be5e8a",
     color: "white",
     display: "flex",
