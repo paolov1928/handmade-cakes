@@ -17,7 +17,6 @@ const useStyles = makeStyles(theme => ({
     boxShadow: "none"
   },
   menuButton: {
-    borderRadius: "50%",
     backgroundColor: "#f1be5e8a",
     color: "white",
     display: "flex",
